@@ -1,0 +1,26 @@
+.item {
+  width: 100%;
+  background-color: #577590;
+  margin-top: 2rem;
+  box-shadow: 10px 9px 13px -2px rgba(0, 0, 0, 0.75);
+  padding: 1rem 5rem;
+  color: #ffffff;
+}
+
+.item span {
+  display: flex;
+  justify-content: space-between;
+}
+
+.item button {
+  padding: 0.7rem 2rem;
+  border-radius: 7px;
+  background-color: transparent;
+  cursor: pointer;
+  color: #ffffff;
+  border: 1px solid #ffffff;
+}
+
+.item button:hover {
+  background-color: #24323f;
+}

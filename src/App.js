@@ -1,23 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import Header from "./components/Header/Header";
+import Cart from "./components/Header/Cart/Cart";
+import { useSelector } from "react-redux";
+import Products from "./components/Products/Products";
+import Backdrop from "./components/Header/Cart/Backdrop";
 
 function App() {
+  const show = useSelector((state) => state.ui.isShown);
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {show && <Backdrop />}
+      <Header />
+      {show && <Cart />}
+      <Products />
     </div>
   );
 }

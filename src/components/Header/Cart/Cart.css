@@ -1,0 +1,24 @@
+.cart {
+  min-height: 100px;
+  width: 30%;
+  left: 35%;
+  border: none;
+  position: fixed;
+  top: 7rem;
+  background-color: #577590;
+  box-shadow: 10px 9px 13px -2px rgba(0, 0, 0, 0.75);
+  color: #ffffff;
+  max-height: 600px;
+  overflow: scroll;
+  overflow-x: hidden;
+}
+
+.cart__title {
+  text-align: center;
+  padding-top: 2rem;
+}
+
+.cart__total {
+  text-align: center;
+  padding-bottom: 2rem;
+}
